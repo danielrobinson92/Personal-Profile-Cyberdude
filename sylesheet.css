@@ -1,0 +1,75 @@
+/*  Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,800;1,400;1,700&display=swap');
+
+/* -------Global Variable------------- */
+:root{
+    --dark-primary: #1b1f24;
+    --primary: #12bdff;
+}
+
+/* --------- Global Selector --------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+/* ----------------------- Header -------------------*/
+header{
+    background-color: #1b1f24;
+    padding: 20px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo{
+    font-weight: 600;
+    font-size: x-large;
+    color: #12bdff;
+    letter-spacing: 2px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin-right: 20px;
+}
+
+ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+
+/* Header > Buttons */
+header button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    background-color: var(--dark-primary);
+    color: var(--primary);
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--dark-primary);
+    transform: scale(1.1);
+}
