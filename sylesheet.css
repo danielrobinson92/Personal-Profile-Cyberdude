@@ -5,6 +5,7 @@
 :root{
     --dark-primary: #1b1f24;
     --primary: #12bdff;
+    --primary-hover: #3790b3;
 }
 
 /* --------- Global Selector --------------- */
@@ -43,7 +44,7 @@ ul{
     list-style: none;
 }
 
-ul li{
+header ul li{
     margin-right: 20px;
 }
 
@@ -56,6 +57,52 @@ ul li a:hover {
     color: var(--primary);
     font-weight: 700;
 }
+
+/* Section :Hero Homepage */
+
+section.hero-section{
+    background-color: var(--dark-primary);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 20px 120px 0 80px;
+}
+section img{
+    width: 400px;
+}
+.hero-section-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+.hero-section-title-name{
+    color: var(--primary);
+}
+.hero-section-icons > ul > li{
+    margin: 15px 10px;
+}
+
+/* Hero Section Button */
+.btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.btn-primary{
+    background-color: var(--primary);
+    color: whitesmoke;
+    border: none;
+}
+
+.btn:hover{
+    background-color: var(--primary-hover);
+    transform: scale(1.1);
+}
+
+.btn.btn-secondary{
+    
+}
+
 
 
 /* Header > Buttons */
@@ -73,3 +120,13 @@ header button:hover{
     color: var(--dark-primary);
     transform: scale(1.1);
 }
+
+.btn-dark-outline{
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    background-color: var(--dark-primary);
+    color: var(--primary);
+}
+
+
+
